@@ -9,7 +9,6 @@ Padres buscando juegos para sus hijos o para regalar a otros niños.
 Adultos y jóvenes en general que buscan regalos para niños cercanos, familia o amigos.
 
 
-
 ## Listado de paginas referentes
 
 >> www.elmundodeljuguete.com.ar
@@ -39,3 +38,7 @@ Cómo diseñador/programador web solo realizó proyectos freelance y está a la 
 ### Lucía Roman
 
 ### Natalia War
+
+## TAMAITI wireframe en figma
+
+https://www.figma.com/file/OlzHwx7DMf6H4GU2tEFZZ9/tamaiti-wireframe-v1?node-id=0%3A1
