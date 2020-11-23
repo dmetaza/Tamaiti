@@ -34,3 +34,8 @@ Técnico en soporte de infraestructura, con deseos de aprender a programar.
 Tecnicamente aporta conocimientos en programación, en especial sobre maquetado.
 Ofrece la posibilidad de unir el buen gusto por el diseño de sus compañeros con la posibilidad de expresarlo en una maqueta html.
 Cómo diseñador/programador web solo realizó proyectos freelance y está a la espera de un desafío importante.
+
+
+### Lucía Roman
+
+### Natalia War
