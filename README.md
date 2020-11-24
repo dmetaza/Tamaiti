@@ -37,7 +37,7 @@ Cómo diseñador/programador web solo realizó proyectos freelance y está a la 
 
 ### Lucía Roman
 
-### Natalia War
+### Natalia Guerra
 
 ## TAMAITI wireframe en figma
 
