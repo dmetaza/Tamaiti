@@ -3,7 +3,7 @@ Es un emprendimiento de juegos tradicionales con diseño para potenciar el desar
 Los productos son juegos con diferentes temáticas para potenciar el aprendizaje.
 
 
-###Nuestro público objetivo son las familias. 
+Nuestro público objetivo son las familias. 
 Adultos que compran y los niños público indirecto que disfrutan los juegos.
 Padres buscando juegos para sus hijos o para regalar a otros niños.
 Adultos y jóvenes en general que buscan regalos para niños cercanos, familia o amigos.
@@ -25,7 +25,7 @@ Adultos y jóvenes en general que buscan regalos para niños cercanos, familia o
 Diseñadora en comunicación Visual egresada de la UNLP.
 Con especial interés en una mirada estratégica del diseño como herramienta de comunicación para empresas. 
 Branding, marketing y web son campos en los cuales se desarrolló en estos últimos años.
-Desarrolla una mirada que combina el conocimiento técnico con la mirada de diseño lo que permite llegar a un resultado final de calidad superadora.
+Desarrolla una mirada que combina el conocimiento técnico con la mirada de diseño lo que permite llegar a un resultado final de calidad integral.
 
 
 ### Darío Metaza
