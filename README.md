@@ -36,6 +36,9 @@ Cómo diseñador/programador web solo realizó proyectos freelance y está a la 
 
 
 ### Lucía Roman
+Licenciada en Comunicación Social egresada de la UNLP. 
+Actualmente me encuentro trabajando como data analytics en una agencia de marketing digital con base en los Estados Unidos. Este trabajo no sólo ha despertado un interés particular en el Marketing Digital, en tanto los datos que proporciona, como una gran fuente de información sino también en la cantidad de herramientas disponibles en el mundo tecnológico.
+
 
 ### Natalia Guerra
 
