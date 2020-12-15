@@ -1,0 +1,162 @@
+
+/* ================================
+- IMPORTS
+================================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500&display=swap');
+/* ================================
+- REGLAS GENERALES
+================================*/
+
+:root {
+    --colorPrincipal: #58bfbc;
+    --colorSecundario: #ff5c8e;
+    --buttonPadding: 15px 20px;
+    --buttonRadius: 15px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+body {
+font-family: 'Roboto';
+text-align: center;
+}
+
+a {
+text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+    font-family: 'Inter';
+    text-align: center;
+    color: var(--colorPrincipal);
+}
+
+form {
+    text-align: center;
+}
+
+
+/* ============
+- HEADER
+============ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 100px;
+
+}
+header .logo {
+    height: 50px;
+
+}
+
+header nav {}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li:first-child {
+    margin-left: 0
+}
+header nav ul li a {
+    text-transform: uppercase;
+    color:#373737a8;
+    text-decoration: none;
+}
+
+/* ================================
+- seccion HOME BANNER PRINCIPAL
+================================*/
+
+section.bannerTienda{
+    background-color: #9fd3d1;
+    display: flex;
+    color: #fff;
+    padding: 20px 0px;
+    background-image: url("../img/tamaiti_banner_home_bk.png");
+}
+
+section.bannerTienda .text {
+        width: 60%;
+        padding: 80px;
+    }
+section.bannerTienda .text h2 {
+        font-size: 50px;
+        font-family: 'Grandstander';
+        line-height: 50px;
+        font-weight: 500;
+        color: #fff;
+        text-shadow: 2px 2px 1px rgb(61, 165, 156);
+
+
+    }
+section.bannerTienda .text p {
+        margin: 50px 0;
+    }
+section.bannerTienda .text a {
+        background: white;
+        border-radius: var(--buttonRadius);
+        padding: var(--buttonPadding);
+        text-decoration: none;
+        color: var(--colorSecundario);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+section.bannerTienda img {
+        width: 30%;
+        position: relative;
+    }
+
+
+    
+
+/* ============
+- FOOTER
+============ */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: var(--colorPrincipal);
+
+}
+
+
+footer  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+footer  ul li {
+    margin-left: 20px;
+}
+
+footer ul li a {
+    text-transform: uppercase;
+    color:#fff;
+    text-decoration: none;
+}
+
+footer ul.navNosotros li a {
+    font-size:14px;
+    font-weight: 600;
+}
+
+
+
