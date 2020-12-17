@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamaiti - Registro</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <header>
+        <a href="#"><img class='logo' src="./img/tamaiti_logo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="">Mi carrito <i class="fa fas fa-cart-plus"></i></a></li>
+                <li><a href="login.html">Ingresar <i class="fa fas fa-user-alt"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="register" class="form">
+            <form  action="mysuperscript.php" autocomplete="on"> 
+              <h1> Registro</h1> 
+              <p> 
+                  <label for="usernamesignup" class="uname" >Tu nombre</label>
+                  <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="Nombre" />
+              </p>
+              <p> 
+                  <label for="emailsignup" class="youmail" > Tu email</label>
+                  <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="ejemplo@mail.com"/> 
+              </p>
+              <p> 
+                  <label for="passwordsignup" class="youpasswd" >Tu password </label>
+                  <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"/> 
+              </p>
+              <p> 
+                  <label for="passwordsignup_confirm" class="youpasswd" >Confirma tu password </label>
+                  <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+              </p>
+              <p class="signin button"> 
+                  <input type="submit" value="Registro"/> 
+              </p>
+              <p class="change_link">  
+                  Ya eres miembro?
+                  <a href="login.html" class="to_register"> Loguéate </a>
+              </p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <ul class="navNosotros">
+            <li><a href="">Sobre Nosotros</a></li>
+            <li><a href="">Tienda Online</a></li>
+        </ul>
+        
+        <ul class="navSocialMedia">
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
