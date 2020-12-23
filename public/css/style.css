@@ -1,0 +1,298 @@
+
+/* ================================
+- IMPORTS
+================================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500&display=swap');
+/* ================================
+- REGLAS GENERALES
+================================*/
+
+:root {
+    --colorPrincipal: #58bfbc;
+    --colorSecundario: #ff5c8e;
+    --buttonPadding: 15px 20px;
+    --buttonRadius: 15px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+body {
+font-family: 'Roboto';
+text-align: center;
+}
+
+a {
+text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+    font-family: 'Inter';
+    text-align: center;
+    color: var(--colorPrincipal);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+form {
+    text-align: center;
+}
+
+
+/* ============
+- HEADER
+============ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 100px;
+
+}
+header .logo {
+    height: 50px;
+
+}
+
+header nav {}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li:first-child {
+    margin-left: 0
+}
+header nav ul li a {
+    text-transform: uppercase;
+    color:#373737a8;
+    text-decoration: none;
+}
+
+/* ================================
+- seccion HOME BANNER PRINCIPAL
+================================*/
+
+section.bannerTienda{
+    background-color: #9fd3d1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-center;
+    color: #fff;
+    padding: 20px 20px;
+    background-image: url("../img/tamaiti_banner_home_bk.png");
+}
+
+section.bannerTienda .text {
+    padding: 80px;
+    }
+section.bannerTienda .text h2 {
+        font-size: 50px;
+        font-family: 'Grandstander';
+        line-height: 50px;
+        font-weight: 500;
+        color: #fff;
+        text-shadow: 2px 2px 1px rgb(61, 165, 156);
+
+
+    }
+section.bannerTienda .text p {
+        margin: 50px 0;
+    }
+section.bannerTienda .text a {
+        background: white;
+        border-radius: var(--buttonRadius);
+        padding: var(--buttonPadding);
+        text-decoration: none;
+        color: var(--colorSecundario);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+section.bannerTienda img {
+max-width:500px;
+}
+
+
+ /* ================================
+- seccion Buscar por Edad
+================================*/
+
+section.buscarEdad{
+    padding: 60px 0px;
+    background-image: url("../img/tamaiti_bk.png");
+}
+
+section.buscarEdad h2 {
+    color: rgb(135 130 123 / 66%);
+    font-size:30px ;
+    font-weight: 600;
+
+ 
+}
+section.buscarEdad ul {
+    display: flex;
+    width: 60%;
+    text-decoration: none;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+margin: 30px auto;
+    }
+section.buscarEdad ul li {
+    }
+
+section.buscarEdad ul li a{
+    display: block;
+    height: 60px;
+    background: #3737370d;
+    border-radius: var(--buttonRadius);
+    padding: var(--buttonPadding);
+    text-decoration: none;
+    color: var(--colorPrincipal);
+    font-weight: 600;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    border: solid 1px #37373721;
+     }
+    
+
+
+
+ /* ================================
+- seccion Oportunidades
+================================*/
+
+section.oportunidades{
+    padding: 60px 0px;
+    background-color: #f2f0e4;
+    background-image: url("../img/tamaiti_footer_bk.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+section.oportunidades h2 {
+    font-size:35px ;
+    font-weight: 600;
+    line-height: 30px;
+ }
+ 
+ section.oportunidades h2 span {
+font-family: 'Grandstander';   
+font-size:25px ;
+color: var(--colorSecundario);
+font-weight: 600;
+ }
+
+section.oportunidades .productList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article.productCard {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    width: 30%;
+    box-shadow: 0px 0px 6px #88888859;
+    padding: 15px;
+    min-width: 350px;
+    margin-top:15px;
+
+}
+article.productCard img {
+    width: 45%;
+
+}
+article.productCard .text  {
+    display:flex;
+    width: 55%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+article.productCard .text h3 {
+    color:#231f20;
+    
+}
+article.productCard .text h5.edad {
+    color:#231f207a;
+    text-transform: uppercase;
+}
+article.productCard .text  h4.precio {
+    color:#231f20;
+    font-weight: bold;
+    font-size: 25px;
+    align-self: flex-end ;
+
+}
+article.productCard .text h6.formaPago {
+    color:#231f2048;
+    font-size: 16px;
+}
+
+/* ============
+- FOOTER
+============ */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: var(--colorPrincipal);
+}
+
+
+footer  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+footer  ul li {
+    margin-left: 20px;
+}
+
+footer ul li a {
+    text-transform: uppercase;
+    color:#fff;
+    text-decoration: none;
+}
+
+footer ul.navNosotros li a {
+    font-size:14px;
+    font-weight: 600;
+}
+
+
+
+@media(max-width:375px){
+
+section.bannerTienda{
+    flex-direction: column;
+
+    }
+
+ article.productCard {
+        min-width: 90%;
+    }    
+
+}
+
