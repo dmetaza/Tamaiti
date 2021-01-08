@@ -95,7 +95,7 @@ section.bannerTienda{
     align-items: flex-center;
     color: #fff;
     padding: 20px 20px;
-    background-image: url("../img/tamaiti_banner_home_bk.png");
+    background-image: url("../images/tamaiti_banner_home_bk.png");
 }
 
 section.bannerTienda .text {
@@ -123,7 +123,7 @@ section.bannerTienda .text a {
         font-weight: 600;
         text-transform: uppercase;
     }
-section.bannerTienda img {
+section.bannerTienda images {
 max-width:500px;
 }
 
@@ -134,7 +134,7 @@ max-width:500px;
 
 section.buscarEdad{
     padding: 60px 0px;
-    background-image: url("../img/tamaiti_bk.png");
+    background-image: url("../images/tamaiti_bk.png");
 }
 
 section.buscarEdad h2 {
@@ -180,7 +180,7 @@ section.buscarEdad ul li a{
 section.oportunidades{
     padding: 60px 0px;
     background-color: #f2f0e4;
-    background-image: url("../img/tamaiti_footer_bk.png");
+    background-image: url("../images/tamaiti_footer_bk.png");
     background-repeat: no-repeat;
     background-position: right bottom;
 }
@@ -216,7 +216,7 @@ article.productCard {
     margin-top:15px;
 
 }
-article.productCard img {
+article.productCard images {
     width: 45%;
 
 }
