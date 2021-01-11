@@ -1,0 +1,27 @@
+{
+  "name": "tamaiti",
+  "version": "1.0.0",
+  "description": "Es un emprendimiento de juegos tradicionales con diseño para potenciar el desarrollo.\r Los productos son juegos con diferentes temáticas para potenciar el aprendizaje.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmetaza/Tamaiti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmetaza/Tamaiti/issues"
+  },
+  "homepage": "https://github.com/dmetaza/Tamaiti#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
