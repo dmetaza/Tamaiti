@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const path= require('path');
+const path = require('path');
+const port = process.env.port || 3000;
 
 var indexRouter = require('./src/routes/index');
 
@@ -11,6 +12,6 @@ app.use(express.static(path.join(__dirname, './public')));
 
 app.use('/', indexRouter);
 
-app.listen(3000, function(){
-    console.log('Esta corriendo sobre el puerto 3000')
+app.listen(port, function(){
+    console.log(`El servidor esta funcionando sobre http://localhost:${port}`)
 })
