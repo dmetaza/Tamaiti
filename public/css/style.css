@@ -395,5 +395,56 @@ section.bannerTienda{
 
 }
 
+/* ================================
+- Style Product Details page
+================================*/
+section.categoria{
+    padding: 60px 0px;
+    background-color: #4fb6a510;
+    background-image: url("../images/tamaiti_footer_bk.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+article.productCard {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    width: 30%;
+    box-shadow: 0px 0px 6px #88888859;
+    padding: 15px;
+    min-width: 350px;
+    margin-top:15px;
 
+}
+article.productCard img {
+    width: 45%;
+
+}
+article.productCard .text  {
+    display:flex;
+    width: 55%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+article.productCard .text h3 {
+    color:#231f20;
+    
+}
+article.productCard .text h5.descuento {
+    color:#231f207a;
+    text-transform: uppercase;
+}
+article.productCard .text  h4.precio {
+    color:#231f20;
+    font-weight: bold;
+    font-size: 25px;
+    align-self: flex-end ;
+
+}
+article.productCard .text h6.formaPago {
+    color:#231f2048;
+    font-size: 16px;
+}
 
