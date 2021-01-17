@@ -1,7 +1,7 @@
 
-<nav class="menu">
+<nav id="menu" class="menu">
     <div class="top">
-    <a href="#" class="btn-menu"> <i class="fa fa-bars"></i></a>
+    <a onclick="openNav()" class="btn-menu"> <i class="fa fa-bars"></i></a>
 
     <a href="#"><img class='logo' src="../../../images/tamaiti_logo.png" alt="logo"></a>
     </div>
@@ -11,8 +11,36 @@
         <li><a href="#"><i class="fa fa-user"></i><span class="enlaceName">Ingresar</span></a></li>
         <li><a href="#"><i class="fa  fa-cart-plus"></i> <span class="enlaceName">Mi carrito </span></a></li>
     </ul>
-
 </nav>
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Domino</a>
+    <a href="#">Memotest</a>
+    <a href="#">Lotería</a>
+    <a href="#">Rompecabezas</a>
+    <a href="#">Kit huerta</a>
+  </div>
+
+
+<!-- Este es el script para el funcionamiento del sidebar -->
+
+ <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("menu").style.marginLeft= "250px";
+
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("menu").style.marginLeft= "0";
+
+
+    }
+    
+</script>
 
 
