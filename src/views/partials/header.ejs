@@ -1,18 +1,41 @@
 
-<nav class="menu">
+<nav id="menu" class="menu">
     <div class="top">
-    <a href="#" class="btn-menu"> <i class="fa fa-bars"></i></a>
+    <a onclick="openNav()" class="btn-menu"> <i class="fa fa-bars"></i></a>
 
-    <a href="#"><img class='logo' src="../../../images/tamaiti_logo.png" alt="logo"></a>
+    <a href="/"><img class='logo' src="../../../images/tamaiti_logo.png" alt="logo"></a>
     </div>
 
     <ul class="enlaces">
         <li><a href="#"><i class="fa fa-search "></i><span class="enlaceName">Buscar</span></a></li>
-        <li><a href="#"><i class="fa fa-user"></i><span class="enlaceName">Ingresar</span></a></li>
-        <li><a href="#"><i class="fa  fa-cart-plus"></i> <span class="enlaceName">Mi carrito </span></a></li>
+        <li><a href="/login"><i class="fa fa-user"></i><span class="enlaceName">Ingresar</span></a></li>
+        <li><a href="/products/cart"><i class="fa  fa-cart-plus"></i> <span class="enlaceName">Mi carrito </span></a></li>
     </ul>
-
 </nav>
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/products">Domino</a>
+    <a href="/products">Memotest</a>
+    <a href="/products">Lotería</a>
+    <a href="/products">Rompecabezas</a>
+    <a href="/products">Kit huerta</a>
+  </div>
+
+
+<!-- Este es el script para el funcionamiento del sidebar -->
+
+ <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  
+    }
+    
+</script>
 
 
