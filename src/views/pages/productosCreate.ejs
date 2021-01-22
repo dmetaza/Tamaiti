@@ -1,0 +1,43 @@
+<%- include('../partials/head'); %>
+<body>
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <section>
+        <div id="createProduct" class="form">
+            <form  action="" autocomplete="on"  method="POST"> 
+              <h1>Cargar nuevo Producto</h1> 
+              <p> 
+                  <label for="" class="" >Nombre </label>
+                  <input id="productName" name="name" required="required" type="text" placeholder="Nombre del producto" />
+              </p>
+              <p> 
+                  <label for="" class="" > Description</label>
+                  <input id="description" name="description" required="required" type="text" placeholder="Descripción del producto"/> 
+              </p>
+              <p> 
+                  <label for="" class="" >Price </label>
+                  <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"/> 
+              </p>
+              <p> 
+                  <label for="passwordsignup_confirm" class="youpasswd" >Confirma tu password </label>
+                  <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+              </p>
+              <p class="signin button"> 
+                  <input type="submit" value="Registro"/> 
+              </p>
+              <p class="change_link">  
+                  Ya eres miembro?
+                  <a href="login" class="to_register"> Loguéate </a>
+              </p>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+<%- include('../partials/closure'); %>
