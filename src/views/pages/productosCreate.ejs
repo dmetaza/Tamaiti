@@ -9,7 +9,7 @@
 
     <section>
         <div id="createProduct" class="form">
-            <form  action="/products/create" autocomplete="on"  method="POST"> 
+            <form  action="/products/create" autocomplete="on"  method="POST" enctype="multipart/form-data"> 
               <h1 class="titlePage">Cargar nuevo Producto</h1> 
               <div class="form-group">
                 <label for="" class="" >Nombre del producto </label>
@@ -21,10 +21,10 @@
                 <input id="description" name="description"  class="form-control" required="required" type="text" placeholder="Descripción del producto"/> 
               </div>
 
-            <!-- <div class="form-group">
+           <div class="form-group">
                 <label for="" class="" >Carga la imagen </label>
-                <input id="image" name="image" class="form-control" required="" type="file" placeholder="Imagen de producto" />
-            </div> -->
+                <input id="image" name="image" class="form-control" required="required" type="file" placeholder="Imagen de producto" />
+            </div>  
 
 
             <div class="form-group">
@@ -33,14 +33,37 @@
             </div>
 
             <div class="form-group">
-              <label for="" class="" > Edad sugerida</label>
-              <input id="age" name="age"  class="form-control" required="required" type="text" placeholder="Edad sugerida"/> 
+              <label for="" class="">Edad sugerida</label>
+              <select id="age" name="age"  class="form-control" required="required" placeholder="Edad sugerida">
+                <option value="1 a 3 años">1 a 3 años</option>
+                <option value="3 a 6 años">3 a 6 años</option>
+                <option value="6 a 9 años">6 a 9 años</option>
+                <option value="+9 años">+9 años</option>
+              </select>
+
             </div>
 
 
             <div class="form-group">
-              <label for="" class="" > Categoria</label>
-              <input id="category" name="category"  class="form-control" required="required" type="text" placeholder="Categoria de producto"/> 
+              <label for="" class=""> Categoria</label>
+               <select id="category" name="category"   class="form-control" required="required" placeholder="Selecciona una categoria">
+                <option value="Domino">Domino</option>
+                <option value="Memotest">Memotest</option>
+                <option value="Loteria">Lotería</option>
+                <option value="Rompecabezas">Rompecabezas</option>
+                <option value="KitHuerta">Kit huerta</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="" class=""> Descuento </label>
+               <select id="discount" name="discount"   class="form-control" required="" placeholder="Selecciona descuento">
+                <option value="10% off">10% off</option>
+                <option value="20% off">20% off</option>
+                <option value="30% off">30% off</option>
+                <option value="SALE 40% off">SALE 40% off</option>
+                <option value="SALE 50% off">SALE 50% off</option>
+              </select>
             </div>
 
 
