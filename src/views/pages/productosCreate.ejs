@@ -1,4 +1,4 @@
-<%- include('../partials/head2'); %>
+<%- include('../partials/head'); %>
 <body>
 
     <header>
@@ -9,7 +9,7 @@
 
     <section>
         <div id="createProduct" class="form">
-            <form  action="" autocomplete="on"  method="POST"> 
+            <form  action="/products/create" autocomplete="on"  method="POST"> 
               <h1 class="titlePage">Cargar nuevo Producto</h1> 
               <div class="form-group">
                 <label for="" class="" >Nombre del producto </label>
@@ -21,17 +21,17 @@
                 <input id="description" name="description"  class="form-control" required="required" type="text" placeholder="Descripción del producto"/> 
               </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="" class="" >Carga la imagen </label>
-                <input id="image" name="image" class="form-control" required="required" type="file" placeholder="Imagen de producto" />
-            </div>
+                <input id="image" name="image" class="form-control" required="" type="file" placeholder="Imagen de producto" />
+            </div> -->
 
 
             <div class="form-group">
               <label for="" class="" >Precio </label>
               <input id="price" name="price" class="form-control" required="required" type="number" placeholder="eg. X8df!90EO" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número y una letra minúscula y mayúscula, y al menos 8 o más caracteres"/> 
             </div>
-            
+
             <div class="form-group">
               <label for="" class="" > Edad sugerida</label>
               <input id="age" name="age"  class="form-control" required="required" type="text" placeholder="Edad sugerida"/> 

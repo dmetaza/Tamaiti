@@ -25,11 +25,24 @@ module.exports = {
          }
        return res.send (pedidoProducto)
     },
-    create: function(req, res){
+
+    boardCreate: function(req, res){
         res.render('pages/productosCreate');
     },
 
+    create: function(req, res){    
+        productos.push({
+            name:req.body.name,
+            description:req.body.description,
+            price:req.body.price,
+            age:req.body.age,
+            category:req.body.category,
 
+        })
+        fs.writeFileSync(path.join(__dirname, '../data/products.json'), JSON.stringify(productos));
+        console.log(req.body)
+        res.redirect('/products')
+    },
 
 
 
