@@ -425,6 +425,25 @@ label{
 - Media Querys
 ================================*/
 
+.btn {
+    background-color: var(--colorPrincipal);
+    font-size: 16px;
+    color: white;
+    border: 1.3px solid #f3eded;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+    /* transition: 0.2s; */
+    outline: none !important;
+    position: relative;
+    line-height: 35px;
+    padding: 5px 30px;
+}
+
+ /* ================================
+- Media Querys
+================================*/
+
 @media(max-width:768px){
 
     header nav.menu {

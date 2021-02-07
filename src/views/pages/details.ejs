@@ -14,9 +14,9 @@
         <h5 class="edad"><%= elProducto.age %></h5>
         <h4 class="precio">$ <%= elProducto.price %></h4>
         <!-- <h6 class="formaPago"><strong>12 cuotas</strong> sin interés</h6> -->
-        <button>
-        <a href=""  class="btn">Comprar</a>
-        </button>
+        <button type="submit" class="btn">Comprar</button>
+        <a h href="<%= elProducto.id %>/edit"><button  class="btn">Editar</button></a>
+
         </div>
     </div>
     <br>
@@ -27,7 +27,28 @@
             </p>            
         </div>
 
-    <br>          
+    <br>        
+    
+    <section class="oportunidades">
+        <h3 >También te puede interesar</h3>
+                
+            <div class="productList">
+                <% for (let i = 0; i < 6; i++) {%> 
+                    <a   href="<%= productos[i].id %>" class="productCard">
+                        <img src="../../../uploads/img_products/<%= productos[i].image %>" alt="producto1">
+                        <div class="text">
+                            <h3 class="title"><%= productos[i].name %></h3>
+                            <h5 class="edad"><%= productos[i].age %></h5>
+                            <h5 class="descuento"><%= productos[i].discount %></h5> 
+                            <h4 class="precio">$<%= productos[i].price %></h4>
+                            <h6 class="formaPago"><strong>12 cuotas</strong> sin interés</h6>
+                        </div>
+                    </a>
+                
+                    <% }%> 
+            
+            </div>
+        </section>
 
     
   
