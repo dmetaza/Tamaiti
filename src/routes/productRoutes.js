@@ -24,9 +24,10 @@ router.get('/', productController.index);
 
 router.get('/create', productController.boardCreate);
 router.post('/create',upload.any(), productController.create);
-//router.put('/create', productController.edit);
-//router.delete('/create', productController.delete);
-//router.get('/productBoard', productController.board);
+
+router.get('/:id/edit', productController.edit);
+router.delete('/:id/edit', productController.delete);
+
 
 router.get('/:id', productController.detail);
 router.get('/cart', productController.cart);
