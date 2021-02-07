@@ -16,17 +16,22 @@ module.exports = {
         let pedidoProducto = req.params.id;
 
         for (let i = 0; i < productos.length; i++) {
-           
             if (pedidoProducto == productos[i].id) {
                  res.render('pages/details', {
                  elProducto: productos[i],
                  productos: productos
-
                 }) 
             }
- 
-        }
-           return res.send (pedidoProducto)
-    }
+         }
+       return res.send (pedidoProducto)
+    },
+    create: function(req, res){
+        res.render('pages/productosCreate');
+    },
+
+
+
+
+
 }
 
