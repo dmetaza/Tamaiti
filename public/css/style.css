@@ -170,7 +170,15 @@ header .sidenav {
 
 
 
+/* ================================
+- Estilo paginas gral
+================================*/
+h1.titlePage{
+    padding: 20px 0px 15px 0px;
+    font-size: 25px;
+    font-family: 'Grandstander';
 
+}
 /* ================================
 - seccion HOME BANNER PRINCIPAL
 ================================*/
@@ -292,7 +300,7 @@ section.oportunidades .productList{
     align-items: center;
 }
 
-article.productCard {
+a.productCard {
     background-color: #fff;
     border-radius: 10px;
     display: flex;
@@ -306,16 +314,16 @@ article.productCard {
 
 }
 
-.productCard:hover{ 
+a.productCard:hover{ 
     box-shadow: 1px 8px 20px  #88888859;
    -webkit-transition:  box-shadow .6s ease-in;
  }
 
-article.productCard img {
+a.productCard img {
     width: 45%;
 
 }
-article.productCard .text  {
+a.productCard .text  {
     display:flex;
     width: 55%;
     justify-content: space-around;
@@ -323,22 +331,22 @@ article.productCard .text  {
     align-items: flex-start;
 }
 
-article.productCard .text h3 {
+a.productCard .text h3 {
     color:#231f20;
     
 }
-article.productCard .text h5.edad {
+a.productCard .text h5.edad {
     color:#231f207a;
     text-transform: uppercase;
 }
-article.productCard .text  h4.precio {
+a.productCard .text  h4.precio {
     color:#231f20;
     font-weight: bold;
     font-size: 25px;
     align-self: flex-end ;
 
 }
-article.productCard .text h6.formaPago {
+a.productCard .text h6.formaPago {
     color:#231f2048;
     font-size: 16px;
 }
@@ -375,7 +383,62 @@ footer ul.navNosotros li a {
     font-size:14px;
     font-weight: 600;
 }
+/* ================================
+- Style Forms
+================================*/
 
+.form{
+    background-color: rgb(245, 245, 245);
+    margin: 0px auto;
+    padding: 0 20%;
+}
+
+.form-group{
+ margin-bottom: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label{
+    color: #3737378a;
+}
+
+.signin button{
+    padding: 10px;
+}
+
+ /* ================================
+- Media Querys
+================================*/
+
+.btn {
+    background-color: var(--colorPrincipal);
+    font-size: 16px;
+    color: white;
+    border: 1.3px solid #f3eded;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+    /* transition: 0.2s; */
+    outline: none !important;
+    position: relative;
+    line-height: 35px;
+    padding: 5px 30px;
+}
 
  /* ================================
 - Media Querys
@@ -440,15 +503,19 @@ header nav.menu img.logo {
 }
     
 
-section.bannerTienda{
+a.bannerTienda{
     flex-direction: column;
 
     }
 
- article.productCard {
+ a.productCard {
         min-width: 90%;
     }    
 
+}
+
+.form{
+    padding: 0 5%;
 }
 
 /* ================================
@@ -474,13 +541,13 @@ section.categoria .productInfo {
     font-weight: 600;
      }
 
-section.relatedProducts .productList{
+section.productList{
         display: flex;     
         flex-wrap: wrap;   
         justify-content: space-around;
         align-items: center;
     }
-article.productCard {
+a.productCard {
     background-color: #fff;
     border-radius: 10px;
     display: flex;
@@ -491,11 +558,11 @@ article.productCard {
     margin-top:15px;
 
 }
-article.productCard img {
+a.productCard img {
     width: 45%;
 
 }
-article.productCard .text  {
+a.productCard .text  {
     display:flex;
     width: 55%;
     justify-content: space-around;
@@ -503,22 +570,23 @@ article.productCard .text  {
     align-items: flex-start;
 }
 
-article.productCard .text h3.title {
+a.productCard .text h3.title {
     color:#231f20;
     
 }
-article.productCard .text h5.descuento {
+a.productCard .text h5.descuento {
     color:#231f207a;
     text-transform: uppercase;
 }
-article.productCard .text  h4.precio {
+a.productCard .text  h4.precio {
     color:#231f20;
     font-weight: bold;
     font-size: 25px;
     align-self: flex-end ;
 
 }
-article.productCard .text h6.formaPago {
+a.productCard .text h6.formaPago {
     color:#231f2048;
     font-size: 16px;
 }
+

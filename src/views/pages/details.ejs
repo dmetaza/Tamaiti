@@ -1,68 +1,57 @@
-<%- include('../partials/head2'); %>
+<%- include('../partials/head'); %>
 <body>
 
     <header>
         <%- include('../partials/header'); %>
     </header>
 
-    <h1>Carrito Compras</h1>
-    <section class="categoria">Categorías/Puzzles</section>
+    <h1 class="titlePage">Detalle de <%= elProducto.name %> </h1>
+    <section class="categoria"><%= elProducto.category %></section>
     <div class="productCard">
-        <img src="../../../images/tamaiti_product_01.png"alt="">
+        <img src="../../../uploads/img_products/<%= elProducto.image %>" alt="NO TA">
         <div class="text">
-        <h3 class="title">Memotest Espacial</h3>
-        <h5 class="edad">Edad 6 a 9 años</h5>
-        <h4 class="precio">$799,-</h4>
-        <h6 class="formaPago"><strong>12 cuotas</strong> sin interés</h6>
-        <button>
-        <a href="" class="btn">Comprar</a>
-        </button>
+        <h3 class="title"><%= elProducto.name %></h3>
+        <h5 class="edad"><%= elProducto.age %></h5>
+        <h4 class="precio">$ <%= elProducto.price %></h4>
+        <!-- <h6 class="formaPago"><strong>12 cuotas</strong> sin interés</h6> -->
+        <button type="submit" class="btn">Comprar</button>
+        <a h href="<%= elProducto.id %>/edit"><button  class="btn">Editar</button></a>
+
         </div>
     </div>
     <br>
     <div class="productInfo" >
        <h7>Características</h7>
             <br>
-            <p>
-            <ul>-12 pares de fichas 7x7cm.</ul>
-            <ul>-Edad 6 a 9 años.</ul>
+            <p><%= elProducto.description %>
             </p>            
         </div>
 
-    <br>          
-<section class= "relatedProducts">
-    <h2 class="h2-relatedProductos">También te puede interesar</h2>
-<br>
-<div class="productList">
-   <article class="productCard">
-    <img src="../../../images/tamaiti_product_01.png" alt="">
-    <div class="text">
-    <h3 class="title">Memotest Colores</h3>
-    <h4 class="precio">$740</h4>
-    <h5 class="descuento"> %10 off</h5>
-    <h6 class="formaPago"><strong>12 cuotas</strong> sin interés</h6>
-    </div>
-</article>
-<article class="productCard">
-    <img src="../../../images/tamaiti_product_01.png" alt="">
-    <div class="text">
-    <h3 class="title">Memotest Dinosaurios</h3>
-    <h4 class="precio">$700</h4>
-    <h5 class="descuento">%10 off</h5>
-    <h6 class="formaPago"><strong>12 cuotas</strong> sin interés</h6>
-    </div>
-</article>
-<article class="productCard">
-    <img src="../../../images/tamaiti_product_01.png" alt="">
-    <div class="text">
-    <h3 class="title">Domino de transportes</h3>
-    <h4 class="precio">$800</h4>
-    <h5 class="descuento">%10 off</h5>
-    <h6 class="formaPago"><strong>12 cuotas</strong> sin interés</h6>
-    </div>
-</article>    
-</div>
-</section>
+    <br>        
+    
+    <section class="oportunidades">
+        <h3 >También te puede interesar</h3>
+                
+            <div class="productList">
+                <% for (let i = 0; i < 6; i++) {%> 
+                    <a   href="<%= productos[i].id %>" class="productCard">
+                        <img src="../../../uploads/img_products/<%= productos[i].image %>" alt="producto1">
+                        <div class="text">
+                            <h3 class="title"><%= productos[i].name %></h3>
+                            <h5 class="edad"><%= productos[i].age %></h5>
+                            <h5 class="descuento"><%= productos[i].discount %></h5> 
+                            <h4 class="precio">$<%= productos[i].price %></h4>
+                            <h6 class="formaPago"><strong>12 cuotas</strong> sin interés</h6>
+                        </div>
+                    </a>
+                
+                    <% }%> 
+            
+            </div>
+        </section>
+
+    
+  
 
     <footer>
         <%- include('../partials/footer'); %>
