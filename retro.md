@@ -21,4 +21,6 @@ A diferencia del Sprint anterior, la comunicación entre los miembros del equipo
 * Reiteramos una vez más, que si bien hemos avanzado con la funcionalidad, todavía podemos agregarle mayor dinamismo a nuestro sitio web. 
 * Creemos que la autocrítica es saber reconocer errores y somos capaces de aceptar cierta falta compromiso y dedicación hacia el proyecto. No se trata de desinterés, sino de falta de tiempo y exceso de responsabilidades externas al curso. 
 * Debemos mejorar la comunicación, buscar momentos de la semana para dedicarle el tiempo necesario al proyecto y trabajar colaborativamente.
+* Seguir mejorando el css. 
+
 
