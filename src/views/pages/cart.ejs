@@ -8,7 +8,52 @@
     <div>
         <h1>Product Cart</h1>
     </div>
-
+    <div class="carrito">
+        <section class="miCarrito">
+            <article>
+                <img src="../../../uploads/img_products/<%= productos[i].image %>" alt="imagenProducto"> 
+                <p>Lorem ipsum dolor sit.</p>
+                <ul>
+                <li> <form class="cantidadCarrito">
+                <label for="cantidadCarrito">Unidades</label><br>
+                <input type="number" id="cantidadCarrito" name="cantidadCarrito" value="1">
+                </form>
+                </li>
+                <li>$ 700</li>
+                </ul>
+            </article>
+            <hr>
+            <article>
+                <img src="/../../uploads/img_products/<%= productos[i].image %>" alt="imagenProducto"> 
+                <p>Lorem ipsum dolor sit.</p>
+                <ul>
+                    <li> <form class="cantidadCarrito">
+                        <label for="cantidadCarrito">Unidades</label><br>
+                        <input type="number" id="cantidadCarrito" name="cantidadCarrito" value="1">
+                      </form>
+                    </li>
+                    <li>$ 800</li>
+                </ul>
+            </article>
+            <hr>
+        </section>  
+    </div>
+</div>
+<div class="totalCarrito">
+    <article>
+    <ul>
+        <li><form class="calculoEnvio">
+            <label for="calculoEnvio">Codigo Postal</label>
+            <input type="text" id="calculoEnvio" name="calculoEnvio" value="">
+        </form>
+    </li>
+    <li>Total Envio</li>
+    <li>$ 150</li>
+    <li>Total </li>
+    <li>$ 1650</li>
+    </ul>
+</article>
+</div>
     <footer>
         <%- include('../partials/footer'); %>
     </footer>
