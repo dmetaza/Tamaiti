@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const port = process.env.port || 3000;
 const methodOverride= require('method-override');
+const session = require ('express-session');
 
 var indexRouter = require('./src/routes/index');
 
@@ -14,7 +15,7 @@ app.use(express.static(path.join(__dirname, './public')));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(methodOverride('_method'));
-
+app.use(session ({secret:'Secreto!'}));
 
 app.use('/', indexRouter);
 
