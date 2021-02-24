@@ -20,4 +20,5 @@ app.use('/', indexRouter);
 
 app.listen(port, function(){
     console.log(`El servidor esta funcionando sobre http://localhost:${port}`)
-})
+});
+
