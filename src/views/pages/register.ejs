@@ -4,7 +4,16 @@
     <header>
         <%- include('../partials/header'); %>
     </header>
-
+    <% if (typeof errors != 'undefined') { %>
+        <p style="color: red"> Error</p>
+        <ul>
+            <% for (let i = 0; i < errors.length; i ++) { %>
+                <li>
+                    <%=errors[i].msg%>
+                </li>
+            <% } %>
+        </ul>
+    <% } %>    
     <section>
         <div id="register" class="form">
             <form  action="mysuperscript.php" autocomplete="on"> 
