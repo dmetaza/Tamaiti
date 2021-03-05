@@ -6,7 +6,7 @@ const userController = require('../controllers/registerController');
 const router = express.Router();
 
 const logMiddleware = require ('../middlewares/logMiddleware');
-const closeSesionMiddleware = require ('../middlewares/closeSessionMiddleware');
+const closeSessionMiddleware = require ('../middlewares/closeSessionMiddleware');
 
 router.get('/', registerController.register);
 router.post('/', logMiddleware,[

@@ -4,7 +4,7 @@ const multer = require('multer');
 const path = require('path');
 const productController = require('../controllers/productController');
 const logMiddleware = require ("../middlewares/logMiddleware");
-const closeSesionMiddleware = require ("../middlewares/closeSessionMiddleware");
+const closeSessionMiddleware = require ("../middlewares/closeSessionMiddleware");
 
 
 var storage = multer.diskStorage({
