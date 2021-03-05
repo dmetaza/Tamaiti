@@ -23,6 +23,6 @@ router.post('/', logMiddleware,[
             }
             return true;
           }).withMessage("Este email ya fue registrado")
-        ], closeSessionMiddleware,registerController.create)
+        ],closeSessionMiddleware,registerController.create)
 
 module.exports = router;

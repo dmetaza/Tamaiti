@@ -1,4 +1,4 @@
-function closeSesionMiddleware (req, res, next){
+function closeSessionMiddleware (req, res, next){
     if(req.session.usuarioLogueado == undefined) {
         next();
     }else{
@@ -8,5 +8,4 @@ function closeSesionMiddleware (req, res, next){
         })
     }
 }
-
 module.exports = closeSessionMiddleware
