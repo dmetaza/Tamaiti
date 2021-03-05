@@ -23,11 +23,10 @@ module.exports = {
         }
         if (usuarioALoguearse == undefined) {
                 return res.render ("pages/login", {errores: [{msg: 'Credenciales invalidas'}]});
-            } 
+            } else {
             req.session.usuarioLogueado = usuarioALoguearse
             console.log("El email fue registrado");
             res.render("index",{usuarioLogueado: req.session.usuarioLogueado})
-        }else{
             return res.render("pages/login", {errores: errores.errors})
         }    
     }
