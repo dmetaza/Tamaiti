@@ -27,11 +27,14 @@ router.post('/', closeSessionMiddleware, productController.productList);
 router.get('/create', productController.boardCreate);
 router.post('/create',upload.any(), productController.create);
 router.get('/:id/edit', productController.edit);
-router.delete('/:id/edit', productController.delete);
 router.post('/:id', closeSessionMiddleware, productController.product);
-router.post('/:id/edit', closeSssionMiddleware ,productController.editView);
 router.get('/:id', productController.detail);
 router.get('/cart', productController.cart);
+
+router.get('/:id/edit', productController.editView)
+router.post('/:id/edit', closeSessionMiddleware, productController.editView);
+router.put('/:id/edit', upload.any(), productController.edit)
+router.delete('/:id/delete', productController.delete)
 
 
 module.exports = router;
