@@ -20,19 +20,17 @@ var upload = multer({ storage: storage })
 
 
 router.get('/', productController.index);
-router.get('/', logMiddleware, productController.productList);
-router.get('/:id', logMiddleware ,productController.product);
-router.post('/', closeSessionMiddleware, productController.productList);
-
 router.get('/create', productController.boardCreate);
 router.post('/create',upload.any(), productController.create);
 router.get('/:id/edit', productController.edit);
-router.post('/:id', closeSessionMiddleware, productController.product);
 router.get('/:id', productController.detail);
 router.get('/cart', productController.cart);
 
-router.get('/:id/edit', productController.editView)
-router.post('/:id/edit', closeSessionMiddleware, productController.editView);
+router.get('/detail', logMiddleware, productController.detail);
+
+
+router.get('/:id/edit', productController.edit)
+router.post('/:id/edit', closeSessionMiddleware, productController.edit);
 router.put('/:id/edit', upload.any(), productController.edit)
 router.delete('/:id/delete', productController.delete)
 
